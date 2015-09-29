@@ -1,16 +1,16 @@
 Rails.application.routes.draw do
 
-  get 'bucket_list/index'
+  #get 'bucket_list/index'
 
-  get 'bucket_list/show'
+  #get 'bucket_list/show'
 
-  get 'bucket_list/new'
+  #get 'bucket_list/new'
 
-  get 'meditation/index'
+  #get 'meditation/index'
 
-  get 'meditation/show'
+  #get 'meditation/show'
 
-  get 'meditation/new'
+  #get 'meditation/new'
 
   #get 'users/index'
 
