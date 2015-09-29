@@ -17,7 +17,8 @@ Rails.application.routes.draw do
   #get 'users/show'
 
   #get 'users/new'
-
+  resources :bucket_list
+  resources :meditation
   devise_for :users
   root 'home#index'
   # The priority is based upon order of creation: first created -> highest priority.
