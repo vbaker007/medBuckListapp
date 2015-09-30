@@ -1,4 +1,5 @@
-class BucketListController < ApplicationController
+class BucketLists
+  Controller < ApplicationController
   def index
     @bucketlists = Bucketlist.all
   end
@@ -22,10 +23,20 @@ class BucketListController < ApplicationController
     end
   end
 
+  def edit
+    @bucketlist = Bucketlist.find(params[:id])
+  end
+
+  def destroy
+    @bucketlist = Bucketlist.find(params[:id])
+    @bucketlist.destroy
+    redirect_to bucketlists_path 
+  end 
+
   private
 
-  def user_params
-    params.require(:user).permit(:title, :user_id)
+  def bucketlist_params
+    params.require(:bucketlist).permit(:title, :user_id)
   end
 end
 

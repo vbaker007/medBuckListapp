@@ -1,4 +1,4 @@
-class MeditationController < ApplicationController
+class MeditationsController < ApplicationController
   def index
   end
 
