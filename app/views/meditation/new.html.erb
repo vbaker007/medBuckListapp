@@ -1,2 +1,30 @@
-<h1>Meditation#new</h1>
-<p>Find me in app/views/meditation/new.html.erb</p>
+%h1 Meditation#new
+%p Find me in app/views/meditation/new.html.erb
+= form_for @meditation do |f|
+  = f.label :type
+  \:
+  \#{f.text_field :type}
+  
+  \#{f.label :technique}
+  \#{f.text_field :technique}
+  
+  \#{f.label :group}
+  \#{f.text_field :group}
+  
+  \#{f.label :name}
+  \#{f.text_field :name}
+  
+  \#{f.label :bucket_id}
+  \#{f.text_field :bucket_id}
+  
+  \#{f.label :long}
+  \#{f.text_field :long}
+  
+  \#{f.label :lat}
+  \#{f.text_field :lat}
+  
+  \#{f.label :zipcode}
+  \#{f.text_field :zipcode}
+  
+  
+  \#{f.submit}

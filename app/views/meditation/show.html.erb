@@ -1,2 +1,11 @@
-<h1>Meditation#show</h1>
-<p>Find me in app/views/meditation/show.html.erb</p>
+%h1 Meditation#show
+%h2= @meditation.type
+%h2
+  >#{@meditation.term}
+%h2= @meditation.group
+%h2= @meditation.bucketlist_id
+%h2= @meditation.long
+%h2= @meditation.lat
+%h2= @meditation.zipcode
+= link_to 'Back', meditations_path
+

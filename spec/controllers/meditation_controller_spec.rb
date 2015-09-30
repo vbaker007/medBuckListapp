@@ -24,3 +24,8 @@ RSpec.describe MeditationController, type: :controller do
   end
 
 end
+
+
+
+
+

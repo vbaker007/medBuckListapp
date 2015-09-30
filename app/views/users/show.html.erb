@@ -1,2 +1,11 @@
-<h1>Users#show</h1>
-<p>Find me in app/views/users/show.html.erb</p>
+%h1 Users#show
+%p Find me in app/views/users/show.html.erb
+%h1 Post
+%h2= @user.firstName
+%h2= @user.lastName
+%h2= @user.age
+%h2= @user.long
+%h2= @user.lat
+%h2= @user.phone
+%h2= @user.zipcode
+= link_to 'Back', users_path

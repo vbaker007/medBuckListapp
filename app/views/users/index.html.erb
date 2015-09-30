@@ -1,5 +1,23 @@
 <h1>Users#index</h1>
-<p>Find me in app/views/users/index.html.erb</p>
-  <%= link_to 'Show user', user_path(post) %>
-  <%= link_to 'Edit user', edit_user_path(user) %>
+<%= @users.each do |user| %>
+  <h2><%= user.firstName %></h2>
+  <h2><%= user.lastName %></h2>
+  <h2><%= user.age %></h2>
+  <h2><%= user.zipcode %></h2>
+  <h2><%= user.phone %></h2>
+  <h2><%= user.location %></h2>
+  <h2><%= user.long %></h2>
+  <h2><%= user.lat %></h2>
+
+
+<p><%= link_to 'New Post', new_post_path %></p>
+<p><%= link_to 'Show user', user_path(post) %></p>
+<p><%= link_to 'Edit user', edit_user_path(user) %></p>
+<p><%= link_to 'Destroy user', user, method: :delete %></p>
+
 <% end %>
+
+
+
+
+

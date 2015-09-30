@@ -20,7 +20,9 @@ Rails.application.routes.draw do
   resources :bucket_list
   resources :meditation
   devise_for :users
-  root 'home#index'
+  root 'bucket_list#index'
+  get '/new', to: 'users#index', as: :show
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

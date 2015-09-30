@@ -1,11 +1,9 @@
-<h1>Meditation#index</h1>
-<% @meditation.each do |meditation| %>
-  <h2><%= meditation.type %></h2>
-  <h3><%= meditation.technique %></h3>
-  <h3><%= meditation.group %></h3>
-  <h3><%= meditation.name %></h3>
-  <h3><%= meditation.long %></h3>
-  <h3><%= meditation.lat %></h3>
-
-  <%= link_to 'Show meditation event', meditation_path(post) %>
-<% end %>
+%h1 Meditation#index
+- @meditation.each do |meditation|
+  %h2= meditation.type
+  %h3= meditation.technique
+  %h3= meditation.group
+  %h3= meditation.name
+  %h3= meditation.long
+  %h3= meditation.lat
+  = link_to 'Show meditation event', meditation_path(post)

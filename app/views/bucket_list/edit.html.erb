@@ -1,0 +1,14 @@
+<h1> Edit bucketlist </h1>
+<%= form_for @bucket_list do |f| %>
+  
+  <%= f.label :title %>:
+  <%= f.text_field :title %>
+  
+  <%= f.label :user_id %>
+  <%= f.integer_field :user_id %>
+ 
+<%= f.submit %>
+<% end %>
+
+%h1 Edit bucketlist
+= form_for @bucket_list do |f|

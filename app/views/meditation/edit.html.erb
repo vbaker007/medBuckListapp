@@ -1,0 +1,33 @@
+<h1>Edit Meditation</h1>
+<%= form_for @meditation do |f| %>
+  
+  <%= f.label :type %>:
+  <%= f.text_field :type %>
+
+  <%= f.label :technique %>
+  <%= f.text_field :technique %>
+
+  <%= f.label :group %>
+  <%= f.text_field :group %>
+
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+
+  <%= f.label :bucket_id %>
+  <%= f.integer_field :bucket_id %>
+
+  <%= f.label :long %>
+  <%= f.integer_field :long %>
+
+  <%= f.label :lat %>
+  <%= f.integer_field :lat %>
+
+  <%= f.label :phone %>
+  <%= f.integer_field :phone %>
+
+  <%= f.label :zipcode %>
+  <%= f.integer_field :zipcode %>
+
+
+<%= f.submit %>
+<% end %>
