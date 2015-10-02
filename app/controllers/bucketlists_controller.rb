@@ -1,5 +1,4 @@
-class BucketLists
-  Controller < ApplicationController
+class BucketlistsController < ApplicationController
   def index
     @bucketlists = Bucketlist.all
   end
@@ -14,10 +13,10 @@ class BucketLists
   end
 
   def create 
-    @bucketlist = Bucketlist.new(bucketlist_path)
+    @bucketlist = Bucketlist.new(bucketlist_params)
     
     if @bucketlist 
-      redirect_to bucketlists_path 
+      redirect_to bucket_lists_path 
     else 
       render :new
     end

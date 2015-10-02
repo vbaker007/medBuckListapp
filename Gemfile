@@ -42,6 +42,7 @@ group :development, :test do
   gem 'rspec-rails'
   gem 'simplecov'
   gem 'factory_girl_rails'
+  gem 'better_errors'
 end
 
 group :development do

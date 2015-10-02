@@ -8,6 +8,8 @@ class User < ActiveRecord::Base
 
   def sign_in
     default_params.permit(:username, :email)
+
+      
   end
 end
 

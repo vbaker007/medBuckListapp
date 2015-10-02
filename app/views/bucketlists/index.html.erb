@@ -1,0 +1,12 @@
+<h1>BucketList#index</h1>
+<p>Find me in app/views/bucketlist/index.html.erb</p>
+<h1> Bucketlist </h1>
+<% @bucketlists.each do |bucketlist| %>
+  <h2><%= bucketlist.title %></h2>
+  <h3><%= bucketlist.user_id %></h3>
+
+<p><%= link_to 'Show bucketlist', bucketlist_path(bucketlist) %></p>
+<p><%= link_to 'Edit bucketlist', edit_bucketlist_path(bucketlist) %></p>
+<p><%= link_to 'New bucketlist', new_bucketlist_path %></p>
+<% end %>
+

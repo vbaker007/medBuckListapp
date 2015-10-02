@@ -18,7 +18,9 @@ class MeditationsController < ApplicationController
     if @meditation.save
       redirect_to meditations_path
     else render :new
+    end
   end
+
 
   def edit
     @meditation = Meditation.find(params[:id])  
@@ -30,6 +32,7 @@ class MeditationsController < ApplicationController
     if @meditation.update(meditation_params)
       redirect_to meditations_path
     else render :edit
+    end
   end
 
   def destroy
